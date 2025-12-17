@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <h1 id="countdown"></h1>
+    <script>
+        // Stel je doel-datum in const targetDate = new Date("December 31, 2025 23:59:59").getTime(); function updateCountdown() { const now = new Date().getTime(); const distance = targetDate - now; if (distance < 0) { document.getElementById("countdown").textContent = "De countdown is afgelopen!"; return; } const days = Math.floor(distance / (1000 * 60 * 60 * 24)); const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)); const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)); const seconds = Math.floor((distance % (1000 * 60)) / 1000); document.getElementById("countdown").textContent = `${days} dagen ${hours} uur ${minutes} min ${seconds} sec`; } // Update elke seconde setInterval(updateCountdown, 1000);
+    </script>
     <h1 id="greeting"></h1>
     <script>
 
