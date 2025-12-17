@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web developer Achraf</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="greeting"></h1>
+    <script>
+
+        function getGreeting() { const now = new Date(); const hour = now.getHours(); let greeting; if (hour >= 6 && hour < 12) { greeting = "Goedemorgen!"; } else if (hour >= 12 && hour < 18) { greeting = "Goedemiddag!"; } else if (hour >= 18 && hour < 24) { greeting = "Goedenavond!"; } else { greeting = "Goedenacht!"; } return greeting; } document.getElementById("greeting").textContent = getGreeting();
+    </script>
+    
+
+<header>
+    <div class="header-top">
+        <img src="achieeeee.png" alt="Logo van Tweakers" width="140" height="auto">
+        <nav>
+             <button id="hamburger">&#9776;</button>
+        <nav id="menu">
+            <ul>
+                <li><a href="nieuws.html">Nieuws</a></li>
+                <li><a href="mijzelf.html">Mijzelf</a></li>
+                <li><a href="projecten.html">Projecten</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="intro">
+        <h1>Portfolio van Achraf</h1>
+        <p>
+            Mijn naam is Achraf Hammouch en ik maak een portfolio voor school dat over mijzelf gaat.
+            In dit portfolio laat ik zien waar ik woon, in welk jaar ik ben geboren, waar mijn buurt zich bevindt,
+            wat mijn afkomst is en hoe mijn cultuur eruitziet.
+        </p>
+    </div>
+</header>
+
+<main>
+    <section class="portfolio">
+        <img src="portfolio.webp" alt="Voorbeeld van portfolio project" class="portfolio-foto">
+        <img src="portfolio.webp" alt="Nog een voorbeeld van portfolio project" class="portfolio-foto">
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 Achraf. Alle rechten voorbehouden.</p>
+</footer>
+
+<!-- Cookie melding -->
+<div id="cookie-banner">
+    Deze website gebruikt cookies.
+    <button id="accept-cookies">Accepteer</button>
+</div>
+
+<!-- Dark/Light mode knoppen -->
+<button id="light-mode-btn">Light Mode</button>
+<button id="dark-mode-btn">Dark Mode</button>
+
+
+<script src="script.js"></script>
+</body>
+</html>
+
